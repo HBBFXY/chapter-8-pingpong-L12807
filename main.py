@@ -43,7 +43,7 @@ def analyze_competition(skill_a, skill_b, match_times, best_of=3):
             win_a_total += 1
         else:
             win_b_total += 1
-    
+
     # 输出分析结果
     print(f"模拟{match_times}场{best_of}局{best_of//2 + 1}胜制比赛：")
     print(f"选手A胜率：{win_a_total/match_times:.2%}")
