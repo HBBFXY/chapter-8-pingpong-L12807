@@ -1,5 +1,4 @@
 import random
-
 def simulate_single_game(skill_a, skill_b):
     """模拟单局乒乓球比赛，返回该局胜者（'A'/'B'）
     :param skill_a: 选手A的得分概率（0-1）
