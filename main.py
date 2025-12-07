@@ -15,7 +15,6 @@ def simulate_single_game(skill_a, skill_b):
         # 判定该局胜负（需满足11分且领先2分，或10平后领先2分）
         if (score_a >= 11 or score_b >= 11) and abs(score_a - score_b) >= 2:
             return 'A' if score_a > score_b else 'B'
-
 def simulate_match(skill_a, skill_b, best_of):
     """模拟多局制比赛（三局两胜/五局三胜），返回比赛胜者
     :param best_of: 比赛局数规则（3=三局两胜，5=五局三胜）
