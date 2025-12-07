@@ -11,7 +11,7 @@ def simulate_single_game(skill_a, skill_b):
             score_a += 1
         else:
             score_b += 1
-        
+
         # 判定该局胜负（需满足11分且领先2分，或10平后领先2分）
         if (score_a >= 11 or score_b >= 11) and abs(score_a - score_b) >= 2:
             return 'A' if score_a > score_b else 'B'
